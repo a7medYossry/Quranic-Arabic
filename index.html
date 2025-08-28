@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,26 @@
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <header class="navbar">
         <div class="container navbar__container">
             <a href="#" class="navbar__brand">Quranic Arabic</a>
-           <nav class="navbar__nav">
+            <nav class="navbar__nav">
                 <a href="#introduction" class="navbar__link">Introduction</a>
-                <a href="#lesson1" class="navbar__link">Lesson 1: The Word</a>
-                <a href="#lesson2" class="navbar__link">Lesson 2: Signs of a Noun</a>
+
+                <div class="dropdown">
+                    <button class="navbar__link dropdown__toggle">Lessons ▼</button>
+                    <div class="dropdown__menu hidden">
+                        <a href="#lesson1" class="dropdown__item">Lesson 1: The Word</a>
+                        <a href="#lesson2" class="dropdown__item">Lesson 2: Signs of a Noun</a>
+                        <a href="#lesson3" class="dropdown__item">Lesson 3: Definite & Indefinite</a>
+                    </div>
+                </div>
             </nav>
             <div class="theme-switcher">
                 <input type="checkbox" id="theme-toggle" class="theme-switcher__checkbox">
@@ -33,19 +43,24 @@
             <section id="introduction" class="content-section">
                 <h1 class="section-title">Introduction</h1>
                 <div class="card">
-                    <p>Learning Quranic Arabic is the key to understanding the powerful messages in the Quranic verses and pondering their depth.</p>
-                    <p>This course focuses on learning Arabic grammar rules and understanding the meaning of numerous key Quranic words. This allows the student to gain an insight into the verses. We aim to make the learning journey easy and enjoyable till proficiency.</p>
-                    <p><strong>Prerequisite:</strong> To start this course, students should already be able to read the Quran fluently.</p>
+                    <p>Learning Quranic Arabic is the key to understanding the powerful messages in the Quranic verses
+                        and pondering their depth.</p>
+                    <p>This course focuses on learning Arabic grammar rules and understanding the meaning of numerous
+                        key Quranic words. This allows the student to gain an insight into the verses. We aim to make
+                        the learning journey easy and enjoyable till proficiency.</p>
+                    <p><strong>Prerequisite:</strong> To start this course, students should already be able to read the
+                        Quran fluently.</p>
                 </div>
             </section>
 
             <section id="lesson1" class="content-section">
                 <h1 class="section-title">Lesson 1: The Arabic Word (أَقْسَامُ الكَلِمَة)</h1>
-                
+
                 <div class="card">
                     <h2>The Word (الْكَلِمَة)</h2>
-                    <p>A word is the fundamental unit of spoken or written language. In Arabic, any word can be one of three types:</p>
-                    
+                    <p>A word is the fundamental unit of spoken or written language. In Arabic, any word can be one of
+                        three types:</p>
+
                     <div class="example">
                         <p class="example-sentence">
                             <span class="arabic c1" dir="rtl" lang="ar">كِتَابٌ</span>
@@ -62,7 +77,8 @@
 
                 <div class="card">
                     <h3>1. The Noun (الاسْم)</h3>
-                    <p>A noun is a word that names a person, animal, place, object, or things. The Arabic noun is a broad category that includes nouns, pronouns, adjectives, and verbal nouns.</p>
+                    <p>A noun is a word that names a person, animal, place, object, or things. The Arabic noun is a
+                        broad category that includes nouns, pronouns, adjectives, and verbal nouns.</p>
                     <p><strong>Examples:</strong></p>
                     <table class="vocab-table">
                         <thead>
@@ -80,7 +96,7 @@
                                 <td><span dir="rtl" lang="ar">إِنْسَانٌ</span></td>
                                 <td>Man</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td><span dir="rtl" lang="ar">قَلَمٌ</span></td>
                                 <td>Pen</td>
                             </tr>
@@ -116,7 +132,7 @@
                                 <td><span dir="rtl" lang="ar">أَيْنَ</span></td>
                                 <td>Where</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td><span dir="rtl" lang="ar">الَّذِي</span></td>
                                 <td>Who</td>
                             </tr>
@@ -126,9 +142,10 @@
 
                 <div class="card">
                     <h3>2. The Verb (الْفِعْل)</h3>
-                    <p>A verb is a word that indicates an action confined to a specific time (past, present, or command).</p>
+                    <p>A verb is a word that indicates an action confined to a specific time (past, present, or
+                        command).</p>
                     <p><strong>Examples:</strong></p>
-                     <table class="vocab-table">
+                    <table class="vocab-table">
                         <thead>
                             <tr>
                                 <th>Arabic</th>
@@ -144,7 +161,7 @@
                                 <td><span dir="rtl" lang="ar">يَنْهَى</span></td>
                                 <td>He forbids (Present)</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td><span dir="rtl" lang="ar">اقْرَأْ</span></td>
                                 <td>Read! (Command)</td>
                             </tr>
@@ -154,9 +171,12 @@
 
                 <div class="card">
                     <h3>3. The Particle (الْحَرْف)</h3>
-                    <p>A particle is a word which does not convey a complete meaning when it stands alone. It gives meaning to a sentence only when it is used with a verb or a noun. The particle does not indicate the past, present or command tense. It includes categories like prepositions, conjunctions, connectors, particles of negation, and so on.</p>
-                     <p><strong>Examples:</strong></p>
-                     <table class="vocab-table">
+                    <p>A particle is a word which does not convey a complete meaning when it stands alone. It gives
+                        meaning to a sentence only when it is used with a verb or a noun. The particle does not indicate
+                        the past, present or command tense. It includes categories like prepositions, conjunctions,
+                        connectors, particles of negation, and so on.</p>
+                    <p><strong>Examples:</strong></p>
+                    <table class="vocab-table">
                         <thead>
                             <tr>
                                 <th>Arabic</th>
@@ -231,7 +251,7 @@
                                     <td><span dir="rtl" lang="ar">أَحَدٌ</span></td>
                                     <td>One and only</td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span dir="rtl" lang="ar">يَلِدْ</span></td>
                                     <td>Begets</td>
                                 </tr>
@@ -285,7 +305,7 @@
                                     <td><span dir="rtl" lang="ar">يُولَدْ</span></td>
                                     <td>Born</td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
                                 </tr>
@@ -294,18 +314,26 @@
                     </div>
                 </div>
 
-               <div class="card">
+                <div class="card">
                     <h2>Exercises (تَدْرِيبَات)</h2>
 
                     <div class="exercise">
-                        <h4>Exercise 1: Ayahs from Surah Al-Qadr</h4>
-                        <p class="exercise-prompt">In the following Ayahs, identify whether each <strong>bold</strong> word is a noun, verb, or particle.</p>
+                        <h3>Exercise 1: Ayahs from Surah Al-Qadr</h3>
+                        <p class="exercise-prompt">In the following Ayahs, identify whether each <strong>bold</strong>
+                            word is a noun, verb, or particle.</p>
                         <blockquote class="arabic-text" dir="rtl" lang="ar">
-                            <p><strong>إِنَّا</strong> أَنزَلْنَاهُ <strong>فِي</strong> لَيْلَةِ <strong>الْقَدْرِ</strong> (1) <strong>وَمَا</strong> أَدْرَاكَ <strong>مَا</strong> لَيْلَةُ الْقَدْرِ (2) لَيْلَةُ الْقَدْرِ <strong>خَيْرٌ</strong> <strong>مِّنْ</strong> أَلْفِ <strong>شَهْرٍ</strong> (3) <strong>تَنَزَّلُ</strong> <strong>الْمَلَائِكَةُ</strong> وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ (4) <strong>سَلَامٌ</strong> <strong>هِيَ</strong> <strong>حَتَّىٰ</strong> مَطْلَعِ الْفَجْرِ (5)</p>
+                            <p><strong>إِنَّا</strong> أَنزَلْنَاهُ <strong>فِي</strong> لَيْلَةِ
+                                <strong>الْقَدْرِ</strong> (1) <strong>وَمَا</strong> أَدْرَاكَ <strong>مَا</strong>
+                                لَيْلَةُ الْقَدْرِ (2) لَيْلَةُ الْقَدْرِ <strong>خَيْرٌ</strong> <strong>مِّنْ</strong>
+                                أَلْفِ <strong>شَهْرٍ</strong> (3) <strong>تَنَزَّلُ</strong>
+                                <strong>الْمَلَائِكَةُ</strong> وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ
+                                (4) <strong>سَلَامٌ</strong> <strong>هِيَ</strong> <strong>حَتَّىٰ</strong> مَطْلَعِ
+                                الْفَجْرِ (5)
+                            </p>
                         </blockquote>
                         <button class="solution-btn">Show Solution</button>
                         <div class="solution-content hidden">
-                           <ul class="analysis-list">
+                            <ul class="analysis-list">
                                 <li><strong>إِنَّا:</strong> Particle (حرف)</li>
                                 <li><strong>فِي:</strong> Particle (حرف)</li>
                                 <li><strong>الْقَدْرِ:</strong> Noun (اسم)</li>
@@ -318,40 +346,79 @@
                                 <li><strong>سَلَامٌ:</strong> Noun (اسم)</li>
                                 <li><strong>هِيَ:</strong> Noun (ضمير)</li>
                                 <li><strong>حَتَّىٰ:</strong> Particle (حرف)</li>
-                           </ul>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="exercise">
-                        <h4>Exercise 2: Ayahs from Surah Al-Alaq</h4>
-                        <p class="exercise-prompt">For the key words in the Ayahs below, write down their meaning and determine their type.</p>
+                        <h3>Exercise 2: Ayahs from Surah Al-Alaq</h3>
+                        <p class="exercise-prompt">For the key words in the Ayahs below, write down their meaning and
+                            determine their type.</p>
                         <blockquote class="arabic-text" dir="rtl" lang="ar">
-                             <p>اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ (1) خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ (2) اقْرَأْ وَرَبُّكَ الْأَكْرَمُ (3)</p>
+                            <p>اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ (1) خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ (2) اقْرَأْ
+                                وَرَبُّكَ الْأَكْرَمُ (3)</p>
                         </blockquote>
                         <button class="solution-btn">Show Solution</button>
                         <div class="solution-content hidden">
-                             <table class="vocab-table">
+                            <table class="vocab-table">
                                 <thead>
-                                    <tr><th>Word</th><th>Meaning</th><th>Type</th></tr>
+                                    <tr>
+                                        <th>Word</th>
+                                        <th>Meaning</th>
+                                        <th>Type</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td><span dir="rtl" lang="ar">اقْرَأْ</span></td><td>Read!</td><td>Verb</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">بِاسْمِ</span></td><td>In the name</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">رَبِّكَ</span></td><td>Your Lord</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">خَلَقَ</span></td><td>He created</td><td>Verb</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">الْإِنسَانَ</span></td><td>The man</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">مِنْ</span></td><td>From</td><td>Particle</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">عَلَقٍ</span></td><td>Clinging substance</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">الْأَكْرَمُ</span></td><td>The Most Generous</td><td>Noun</td></tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">اقْرَأْ</span></td>
+                                        <td>Read!</td>
+                                        <td>Verb</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">بِاسْمِ</span></td>
+                                        <td>In the name</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">رَبِّكَ</span></td>
+                                        <td>Your Lord</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">خَلَقَ</span></td>
+                                        <td>He created</td>
+                                        <td>Verb</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">الْإِنسَانَ</span></td>
+                                        <td>The man</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">مِنْ</span></td>
+                                        <td>From</td>
+                                        <td>Particle</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">عَلَقٍ</span></td>
+                                        <td>Clinging substance</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">الْأَكْرَمُ</span></td>
+                                        <td>The Most Generous</td>
+                                        <td>Noun</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
 
                     <div class="exercise">
-                        <h4>Exercise 3: Define Word Meanings and Types</h4>
-                        <p class="exercise-prompt">Write down the meaning and type for each of the following Arabic words.</p>
-                         <table class="vocab-table">
+                        <h3>Exercise 3: Define Word Meanings and Types</h3>
+                        <p class="exercise-prompt">Write down the meaning and type for each of the following Arabic
+                            words.</p>
+                        <table class="vocab-table">
                             <thead>
                                 <tr>
                                     <th>Arabic Word</th>
@@ -360,31 +427,99 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td><span dir="rtl" lang="ar">قُلْ</span></td><td>...</td><td>...</td></tr>
-                                <tr><td><span dir="rtl" lang="ar">أَعُوذُ</span></td><td>...</td><td>...</td></tr>
-                                <tr><td><span dir="rtl" lang="ar">رَبِّ</span></td><td>...</td><td>...</td></tr>
-                                <tr><td><span dir="rtl" lang="ar">النَّاسِ</span></td><td>...</td><td>...</td></tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">قُلْ</span></td>
+                                    <td>...</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">أَعُوذُ</span></td>
+                                    <td>...</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">رَبِّ</span></td>
+                                    <td>...</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">النَّاسِ</span></td>
+                                    <td>...</td>
+                                    <td>...</td>
+                                </tr>
                             </tbody>
                         </table>
                         <button class="solution-btn">Show Solution</button>
                         <div class="solution-content hidden">
-                           <table class="vocab-table">
+                            <table class="vocab-table">
                                 <thead>
-                                    <tr><th>Arabic Word</th><th>Meaning</th><th>Type</th></tr>
+                                    <tr>
+                                        <th>Arabic Word</th>
+                                        <th>Meaning</th>
+                                        <th>Type</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td><span dir="rtl" lang="ar">قُلْ</span></td><td>Say</td><td>Verb</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">أَعُوذُ</span></td><td>I seek refuge</td><td>Verb</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">رَبِّ</span></td><td>Lord</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">النَّاسِ</span></td><td>Mankind</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">مَلِك</span></td><td>King</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">إِلَهِ</span></td><td>God</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">شَرّ</span></td><td>Evil</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">الْوَسْوَاسِ</span></td><td>The whisperer</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">فِي</span></td><td>In</td><td>Particle</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">أَحَدٌ</span></td><td>One</td><td>Noun</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">هُوَ</span></td><td>He</td><td>Noun (Pronoun)</td></tr>
-                                    <tr><td><span dir="rtl" lang="ar">قَلَمٌ</span></td><td>Pen</td><td>Noun</td></tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">قُلْ</span></td>
+                                        <td>Say</td>
+                                        <td>Verb</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">أَعُوذُ</span></td>
+                                        <td>I seek refuge</td>
+                                        <td>Verb</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">رَبِّ</span></td>
+                                        <td>Lord</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">النَّاسِ</span></td>
+                                        <td>Mankind</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">مَلِك</span></td>
+                                        <td>King</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">إِلَهِ</span></td>
+                                        <td>God</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">شَرّ</span></td>
+                                        <td>Evil</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">الْوَسْوَاسِ</span></td>
+                                        <td>The whisperer</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">فِي</span></td>
+                                        <td>In</td>
+                                        <td>Particle</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">أَحَدٌ</span></td>
+                                        <td>One</td>
+                                        <td>Noun</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">هُوَ</span></td>
+                                        <td>He</td>
+                                        <td>Noun (Pronoun)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">قَلَمٌ</span></td>
+                                        <td>Pen</td>
+                                        <td>Noun</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -392,13 +527,14 @@
                 </div>
 
             </section>
-           <section id="lesson2" class="content-section">
+            <section id="lesson2" class="content-section">
                 <h1 class="section-title">Lesson 2: The Signs of a Noun (عَلَامَاتُ الاِسْمِ)</h1>
-                
-              <div class="card">
+
+                <div class="card">
                     <h2>How to Recognize a Noun</h2>
                     <blockquote class="definition-box">
-                        For each type of word, there are certain signs that tell you its type immediately. A noun in Arabic is recognized by one of the following signs.
+                        For each type of word, there are certain signs that tell you its type immediately. A noun in
+                        Arabic is recognized by one of the following signs.
                     </blockquote>
 
                     <div class="signs-grid">
@@ -414,16 +550,16 @@
                         <div class="sign-item sign-item--color-2">
                             <h3>2. The Tanween (ـً ـٍ ـٌ)</h3>
                             <p>Any word that ends with Tanween (double vowel marking) is a noun.</p>
-                             <div class="example-mini">
+                            <div class="example-mini">
                                 <span dir="rtl" lang="ar">كِتَابٌ</span>
                                 <span>A book</span>
                             </div>
                         </div>
-                        
+
                         <div class="sign-item sign-item--color-3">
                             <h3>3. The "Al" Prefix (الـ)</h3>
                             <p>Any word that begins with the definite article 'Al' is a noun.</p>
-                             <div class="example-mini">
+                            <div class="example-mini">
                                 <span dir="rtl" lang="ar">الْقَمَرُ</span>
                                 <span>The moon</span>
                             </div>
@@ -440,17 +576,18 @@
 
                         <div class="sign-item sign-item--color-5">
                             <h3>5. Ends with Kasrah (ـِ)</h3>
-                            <p>If a word ends with a Kasrah, it is a noun (often due to a preceding preposition or Idafa).</p>
-                             <div class="example-mini">
+                            <p>If a word ends with a Kasrah, it is a noun (often due to a preceding preposition or
+                                Idafa).</p>
+                            <div class="example-mini">
                                 <span dir="rtl" lang="ar">بِسْمِ اللهِ</span>
                                 <span>In the name of Allah</span>
                             </div>
                         </div>
-                        
+
                         <div class="sign-item sign-item--color-6">
                             <h3>6. The Idafa (الإضافة)</h3>
                             <p>A word that is possessed in a possessive phrase (Mudaf) is always a noun.</p>
-                             <div class="example-mini">
+                            <div class="example-mini">
                                 <span dir="rtl" lang="ar">كِتَابُ الطَّالِبِ</span>
                                 <span>The student's book</span>
                             </div>
@@ -459,7 +596,7 @@
                         <div class="sign-item sign-item--color-7">
                             <h3>7. The Nida' (النداء)</h3>
                             <p>A word that follows a particle of calling (like Yaa) is a noun.</p>
-                             <div class="example-mini">
+                            <div class="example-mini">
                                 <span dir="rtl" lang="ar">يَا رَجُلُ</span>
                                 <span>O man!</span>
                             </div>
@@ -471,27 +608,34 @@
                     <p>Notice the colored words in the Ayahs and how they match the signs of a noun explained below.</p>
                     <div class="example">
                         <p class="example-sentence">
-                            <span class="arabic" dir="rtl" lang="ar">وَ<span class="c1">التِّينِ</span> وَ<span class="c2">الزَّيْتُونِ</span></span>
+                            <span class="arabic" dir="rtl" lang="ar">وَ<span class="c1">التِّينِ</span> وَ<span
+                                    class="c2">الزَّيْتُونِ</span></span>
                         </p>
                         <p class="translation">
                             By the <span class="c1">fig</span> and the <span class="c2">olive</span>.
                         </p>
                         <ul class="analysis-list">
-                            <li><span class="c1">التِّينِ</span> is a noun because it starts with 'Al' and ends with a Kasrah.</li>
-                            <li><span class="c2">الزَّيْتُونِ</span> is a noun because it starts with 'Al' and ends with a Kasrah.</li>
+                            <li><span class="c1">التِّينِ</span> is a noun because it starts with 'Al' and ends with a
+                                Kasrah.</li>
+                            <li><span class="c2">الزَّيْتُونِ</span> is a noun because it starts with 'Al' and ends with
+                                a Kasrah.</li>
                         </ul>
                     </div>
-                     <div class="example">
+                    <div class="example">
                         <p class="example-sentence">
-                            <span class="arabic" dir="rtl" lang="ar">لَقَدْ خَلَقْنَا <span class="c1">الْإِنسَانَ</span> فِي <span class="c2">أَحْسَنِ</span> <span class="c3">تَقْوِيمٍ</span></span>
+                            <span class="arabic" dir="rtl" lang="ar">لَقَدْ خَلَقْنَا <span
+                                    class="c1">الْإِنسَانَ</span> فِي <span class="c2">أَحْسَنِ</span> <span
+                                    class="c3">تَقْوِيمٍ</span></span>
                         </p>
                         <p class="translation">
-                            We have certainly created <span class="c1">man</span> in the best <span class="c2">stature</span>;
+                            We have certainly created <span class="c1">man</span> in the best <span
+                                class="c2">stature</span>;
                         </p>
-                         <ul class="analysis-list">
+                        <ul class="analysis-list">
                             <li><span class="c1">الْإِنسَانَ</span> is a noun because it starts with 'Al'.</li>
-                            <li><span class="c2">أَحْسَنِ</span> is a noun because it is preceded by the preposition 'فِي' and ends with a Kasrah.</li>
-                             <li><span class="c3">تَقْوِيمٍ</span> is a noun because it ends with Tanween.</li>
+                            <li><span class="c2">أَحْسَنِ</span> is a noun because it is preceded by the preposition
+                                'فِي' and ends with a Kasrah.</li>
+                            <li><span class="c3">تَقْوِيمٍ</span> is a noun because it ends with Tanween.</li>
                         </ul>
                     </div>
                 </div>
@@ -500,47 +644,283 @@
                     <h3>Vocabulary from Surah At-Tin & Ad-Duhaa</h3>
                     <div class="vocab-grid-container">
                         <table class="vocab-table">
-                             <thead>
-                                <tr><th>Arabic</th><th>English</th></tr>
+                            <thead>
+                                <tr>
+                                    <th>Arabic</th>
+                                    <th>English</th>
+                                </tr>
                             </thead>
                             <tbody>
-                                <tr><td><span dir="rtl" lang="ar">التِّين</span></td><td><span class="answer">Fig</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">الزَّيْتُون</span></td><td><span class="answer">Olive</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">الْبَلَد</span></td><td><span class="answer">The City</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">أَجْر</span></td><td><span class="answer">Reward</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">الضُّحَى</span></td><td><span class="answer">The morning brightness</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">اللَّيْل</span></td><td><span class="answer">The night</span></td></tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">التِّين</span></td>
+                                    <td><span class="answer">Fig</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الزَّيْتُون</span></td>
+                                    <td><span class="answer">Olive</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الْبَلَد</span></td>
+                                    <td><span class="answer">The City</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">أَجْر</span></td>
+                                    <td><span class="answer">Reward</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الضُّحَى</span></td>
+                                    <td><span class="answer">The morning brightness</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">اللَّيْل</span></td>
+                                    <td><span class="answer">The night</span></td>
+                                </tr>
                             </tbody>
                         </table>
                         <table class="vocab-table">
-                             <thead>
-                                <tr><th>Arabic</th><th>English</th></tr>
+                            <thead>
+                                <tr>
+                                    <th>Arabic</th>
+                                    <th>English</th>
+                                </tr>
                             </thead>
                             <tbody>
-                                <tr><td><span dir="rtl" lang="ar">الْآخِرَة</span></td><td><span class="answer">The hereafter</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">خَيْر</span></td><td><span class="answer">Better</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">يَتِيم</span></td><td><span class="answer">Orphan</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">ضَالّ</span></td><td><span class="answer">Lost</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">سَائِل</span></td><td><span class="answer">Petitioner</span></td></tr>
-                                <tr><td><span dir="rtl" lang="ar">وَدَّعَكَ</span></td><td><span class="answer">taken leave of you</span></td></tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الْآخِرَة</span></td>
+                                    <td><span class="answer">The hereafter</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">خَيْر</span></td>
+                                    <td><span class="answer">Better</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">يَتِيم</span></td>
+                                    <td><span class="answer">Orphan</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">ضَالّ</span></td>
+                                    <td><span class="answer">Lost</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">سَائِل</span></td>
+                                    <td><span class="answer">Petitioner</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">وَدَّعَكَ</span></td>
+                                    <td><span class="answer">taken leave of you</span></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                
-               <div class="card">
+                <div class="card">
+                    <h2>More Examples: Surah Ad-Duhaa</h2>
+                    <blockquote class="arabic-text" dir="rtl" lang="ar">
+                        <p>وَ<strong>الضُّحَىٰ</strong> (1)</p>
+                        <p class="translation">by the morning brightness [cite: 169, 170]</p>
+                        <p>وَ<strong>اللَّيْلِ</strong> إِذَا سَجَىٰ (2)</p>
+                        <p class="translation">And [by] the night when it covers with darkness, [cite: 171,
+                            172]</p>
+                        <p>مَا وَدَّعَكَ <strong>رَبُّكَ</strong> وَمَا قَلَىٰ (3)</p>
+                        <p class="translation">Your Lord has not taken leave of you, [O Muhammad], nor has
+                            He detested [you]. [cite: 180, 182]</p>
+                        <p>وَلَ<strong>لْآخِرَةُ</strong> <strong>خَيْرٌ</strong> لَّكَ مِنَ <strong>الْأُولَىٰ</strong>
+                            (4)</p>
+                        <p class="translation">And the Hereafter is better for you than the first [life].
+                            [cite: 183, 184]</p>
+                        <p>وَلَسَوْفَ يُعْطِيكَ <strong>رَبُّكَ</strong> فَتَرْضَىٰ (5)</p>
+                        <p class="translation">and your Lord is going to give you, and you will be
+                            satisfied. [cite: 185, 186]</p>
+                        <p>أَلَمْ يَجِدْكَ <strong>يَتِيمًا</strong> فَآوَىٰ (6)</p>
+                        <p class="translation">Did He not find you an orphan and give [you] refuge? [cite:
+                            187, 188]</p>
+                        <p>وَوَجَدَكَ <strong>ضَالًّا</strong> فَهَدَىٰ (7)</p>
+                        <p class="translation">And He found you lost and guided [you], [cite: 189, 190]</p>
+                        <p>وَوَجَدَكَ <strong>عَائِلًا</strong> فَأَغْنَىٰ (8)</p>
+                        <p class="translation">And He found you poor and made [you] self-sufficient. [cite:
+                            191, 192]</p>
+                        <p>فَأَمَّا <strong>الْيَتِيمَ</strong> فَلَا تَقْهَرْ (9)</p>
+                        <p class="translation">so as for the orphan, do not oppress [him]. [cite: 193, 194]
+                        </p>
+                        <p>وَأَمَّا <strong>السَّائِلَ</strong> فَلَا تَنْهَرْ (10)</p>
+                        <p class="translation">and as for the petitioner, do not repel [him]. [cite: 195,
+                            196]</p>
+                        <p>وَأَمَّا بِ<strong>نِعْمَةِ</strong> <strong>رَبِّكَ</strong> فَحَدِّثْ (11)</p>
+                        <p class="translation">But as for the favor of your Lord, report [it]. [cite: 197,
+                            198]</p>
+                    </blockquote>
+                </div>
+
+                <div class="card">
+                    <h3>Vocabulary from Surah Ad-Duhaa (All Words)</h3>
+                    <p>Learn every word from the Surah, in order of appearance.</p>
+                    <table class="vocab-table">
+                        <thead>
+                            <tr>
+                                <th>Arabic</th>
+                                <th>English</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">وَ</span></td>
+                                <td><span class="answer">And</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">الضُّحَىٰ</span></td>
+                                <td><span class="answer">The morning brightness</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">اللَّيْلِ</span></td>
+                                <td><span class="answer">The night</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">إِذَا</span></td>
+                                <td><span class="answer">When</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">سَجَىٰ</span></td>
+                                <td><span class="answer">It covers with darkness</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">مَا</span></td>
+                                <td><span class="answer">Not</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">وَدَّعَكَ</span></td>
+                                <td><span class="answer">He has taken leave of you</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">رَبُّكَ</span></td>
+                                <td><span class="answer">Your Lord</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">قَلَىٰ</span></td>
+                                <td><span class="answer">He has detested</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">لَلْآخِرَةُ</span></td>
+                                <td><span class="answer">And the Hereafter</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">خَيْرٌ</span></td>
+                                <td><span class="answer">Is better</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">لَكَ</span></td>
+                                <td><span class="answer">For you</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">مِنَ</span></td>
+                                <td><span class="answer">Than</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">الْأُولَىٰ</span></td>
+                                <td><span class="answer">The first [life]</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">لَسَوْفَ</span></td>
+                                <td><span class="answer">And soon</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">يُعْطِيكَ</span></td>
+                                <td><span class="answer">He will give you</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَتَرْضَىٰ</span></td>
+                                <td><span class="answer">And you will be satisfied</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">أَلَمْ</span></td>
+                                <td><span class="answer">Did not?</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">يَجِدْكَ</span></td>
+                                <td><span class="answer">He find you</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">يَتِيمًا</span></td>
+                                <td><span class="answer">An orphan</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَآوَىٰ</span></td>
+                                <td><span class="answer">And give refuge</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">وَجَدَكَ</span></td>
+                                <td><span class="answer">And He found you</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">ضَالًّا</span></td>
+                                <td><span class="answer">Lost</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَهَدَىٰ</span></td>
+                                <td><span class="answer">And guided</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">عَائِلًا</span></td>
+                                <td><span class="answer">In need / Poor</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَأَغْنَىٰ</span></td>
+                                <td><span class="answer">And made self-sufficient</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَأَمَّا</span></td>
+                                <td><span class="answer">So as for</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">الْيَتِيمَ</span></td>
+                                <td><span class="answer">The orphan</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَلَا</span></td>
+                                <td><span class="answer">Then do not</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">تَقْهَرْ</span></td>
+                                <td><span class="answer">Oppress</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">السَّائِلَ</span></td>
+                                <td><span class="answer">The petitioner</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">تَنْهَرْ</span></td>
+                                <td><span class="answer">Repel</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">بِنِعْمَةِ</span></td>
+                                <td><span class="answer">The favor</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَحَدِّثْ</span></td>
+                                <td><span class="answer">Then proclaim / report</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
                     <h2>Exercises (تَدْرِيبَات)</h2>
 
                     <div class="exercise">
-                        <h4>Exercise 1: Analyze the Nouns</h4>
-                        <p class="exercise-prompt">In the following Ayah from Surah At-Tariq, explain why the <strong>bold</strong> words are considered nouns, based on the signs you learned.</p>
+                        <h3>Exercise 1: Analyze the Nouns</h3>
+                        <p class="exercise-prompt">In the following Ayah from Surah At-Tariq, explain why the
+                            <strong>bold</strong> words are considered nouns, based on the signs you learned.
+                        </p>
                         <blockquote class="arabic-text" dir="rtl" lang="ar">
-                            <p>وَ<strong>السَّمَاءِ</strong> وَ<strong>الطَّارِقِ</strong> وَمَا أَدْرَاكَ مَا الطَّارِقُ <strong>النَّجْمُ</strong> الثَّاقِبُ إِن كُلُّ <strong>نَفْسٍ</strong> لَّمَّا عَلَيْهَا <strong>حَافِظٌ</strong> فَلْيَنظُرِ <strong>الْإِنسَانُ</strong> مِمَّ خُلِقَ خُلِقَ مِن <strong>مَّاءٍ</strong> دَافِقٍ</p>
+                            <p>وَ<strong>السَّمَاءِ</strong> وَ<strong>الطَّارِقِ</strong> وَمَا أَدْرَاكَ مَا
+                                الطَّارِقُ <strong>النَّجْمُ</strong> الثَّاقِبُ إِن كُلُّ <strong>نَفْسٍ</strong>
+                                لَّمَّا عَلَيْهَا <strong>حَافِظٌ</strong> فَلْيَنظُرِ <strong>الْإِنسَانُ</strong>
+                                مِمَّ خُلِقَ خُلِقَ مِن <strong>مَّاءٍ</strong> دَافِقٍ</p>
                         </blockquote>
                         <button class="solution-btn">Show Solution</button>
                         <div class="solution-content hidden">
                             <ul class="analysis-list">
-                                <li><strong>السَّمَاءِ / الطَّارِقِ:</strong> Nouns because they start with 'Al' and end with a Kasrah.</li>
+                                <li><strong>السَّمَاءِ / الطَّارِقِ:</strong> Nouns because they start with 'Al' and end
+                                    with a Kasrah.</li>
                                 <li><strong>النَّجْمُ / الْإِنسَانُ:</strong> Nouns because they start with 'Al'.</li>
                                 <li><strong>نَفْسٍ / مَّاءٍ:</strong> Nouns because they end with Tanween.</li>
                                 <li><strong>حَافِظٌ:</strong> A noun because it ends with Tanween.</li>
@@ -549,31 +929,37 @@
                     </div>
 
                     <div class="exercise">
-                        <h4>Exercise 2: Find the Nouns</h4>
-                        <p class="exercise-prompt">Find all the nouns in the following Ayahs from Surah Ash-Shams and Surah Al-Balad and state their signs.</p>
+                        <h3>Exercise 2: Find the Nouns</h3>
+                        <p class="exercise-prompt">Find all the nouns in the following Ayahs from Surah Ash-Shams and
+                            Surah Al-Balad and state their signs.</p>
                         <blockquote class="arabic-text" dir="rtl" lang="ar">
-                            <p><strong>(Surah Ash-Shams):</strong> وَالشَّمْسِ وَضُحَاهَا (1) وَالْقَمَرِ إِذَا تَلَاهَا (2) وَالنَّهَارِ إِذَا جَلَّاهَا (3) وَاللَّيْلِ إِذَا يَغْشَاهَا (4) وَالسَّمَاءِ وَمَا بَنَاهَا (5) وَالْأَرْضِ وَمَا طَحَاهَا (6) وَنَفْسٍ وَمَا سَوَّاهَا (7)</p>
+                            <p><strong>(Surah Ash-Shams):</strong> وَالشَّمْسِ وَضُحَاهَا (1) وَالْقَمَرِ إِذَا تَلَاهَا
+                                (2) وَالنَّهَارِ إِذَا جَلَّاهَا (3) وَاللَّيْلِ إِذَا يَغْشَاهَا (4) وَالسَّمَاءِ وَمَا
+                                بَنَاهَا (5) وَالْأَرْضِ وَمَا طَحَاهَا (6) وَنَفْسٍ وَمَا سَوَّاهَا (7)</p>
                             <hr>
-                            <p><strong>(Surah Al-Balad):</strong> لَا أُقْسِمُ بِهَذَا الْبَلَدِ (1) وَأَنتَ حِلٌّ بِهَذَا الْبَلَدِ (2) وَوَالِدٍ وَمَا وَلَدَ (3) لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ (4)</p>
+                            <p><strong>(Surah Al-Balad):</strong> لَا أُقْسِمُ بِهَذَا الْبَلَدِ (1) وَأَنتَ حِلٌّ
+                                بِهَذَا الْبَلَدِ (2) وَوَالِدٍ وَمَا وَلَدَ (3) لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ
+                                (4)</p>
                         </blockquote>
                         <button class="solution-btn">Show Solution</button>
                         <div class="solution-content hidden">
-                             <p><strong>Nouns from Surah Ash-Shams:</strong></p>
-                             <ul class="analysis-list">
-                                <li>الشَّمْسِ، الْقَمَرِ، النَّهَارِ، اللَّيْلِ، السَّمَاءِ، الْأَرْضِ (All start with 'Al' and end with Kasrah).</li>
+                            <p><strong>Nouns from Surah Ash-Shams:</strong></p>
+                            <ul class="analysis-list">
+                                <li>الشَّمْسِ، الْقَمَرِ، النَّهَارِ، اللَّيْلِ، السَّمَاءِ، الْأَرْضِ (All start with
+                                    'Al' and end with Kasrah).</li>
                                 <li>نَفْسٍ (Ends with Tanween).</li>
-                             </ul>
-                             <p><strong>Nouns from Surah Al-Balad:</strong></p>
-                             <ul class="analysis-list">
+                            </ul>
+                            <p><strong>Nouns from Surah Al-Balad:</strong></p>
+                            <ul class="analysis-list">
                                 <li>الْبَلَدِ (Preceded by a preposition 'بِ', starts with 'Al', ends with Kasrah).</li>
                                 <li>وَالِدٍ، كَبَدٍ (End with Tanween).</li>
                                 <li>الْإِنسَانَ (Starts with 'Al').</li>
-                             </ul>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="exercise">
-                        <h4>Exercise 3: Vocabulary Recall</h4>
+                        <h3>Exercise 3: Vocabulary Recall</h3>
                         <p class="exercise-prompt">Write the Arabic word for each English meaning below.</p>
                         <table class="vocab-table">
                             <thead>
@@ -583,25 +969,58 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>City</td><td>...</td></tr>
-                                <tr><td>Reward</td><td>...</td></tr>
-                                <tr><td>Then</td><td>...</td></tr>
-                                <tr><td>Fig</td><td>...</td></tr>
-                                <tr><td>Olive</td><td>...</td></tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Reward</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Then</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Fig</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Olive</td>
+                                    <td>...</td>
+                                </tr>
                             </tbody>
                         </table>
                         <button class="solution-btn">Show Solution</button>
                         <div class="solution-content hidden">
-                             <table class="vocab-table">
+                            <table class="vocab-table">
                                 <thead>
-                                    <tr><th>English Meaning</th><th>Correct Arabic Word</th></tr>
+                                    <tr>
+                                        <th>English Meaning</th>
+                                        <th>Correct Arabic Word</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>City</td><td><span dir="rtl" lang="ar">الْبَلَد</span></td></tr>
-                                    <tr><td>Reward</td><td><span dir="rtl" lang="ar">أَجْر</span></td></tr>
-                                    <tr><td>Then</td><td><span dir="rtl" lang="ar">ثُمَّ</span></td></tr>
-                                    <tr><td>Fig</td><td><span dir="rtl" lang="ar">التِّين</span></td></tr>
-                                    <tr><td>Olive</td><td><span dir="rtl" lang="ar">الزَّيْتُون</span></td></tr>
+                                    <tr>
+                                        <td>City</td>
+                                        <td><span dir="rtl" lang="ar">الْبَلَد</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reward</td>
+                                        <td><span dir="rtl" lang="ar">أَجْر</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Then</td>
+                                        <td><span dir="rtl" lang="ar">ثُمَّ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fig</td>
+                                        <td><span dir="rtl" lang="ar">التِّين</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Olive</td>
+                                        <td><span dir="rtl" lang="ar">الزَّيْتُون</span></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -609,11 +1028,772 @@
                 </div>
 
             </section>
-           
-           
+
+            <section id="lesson3" class="content-section">
+                <h1 class="section-title">Lesson 3: Definite & Indefinite Nouns (النَّكِرَةُ وَالْمَعْرِفَةُ)</h1>
+
+                <div class="card">
+                    <h2>The Four Characteristics of a Noun</h2>
+                    <blockquote class="definition-box">
+                        Every noun in Arabic must have four characteristics. In this lesson, we focus on the first one:
+                        being either Definite (مَعْرِفَة) or Indefinite (نَكِرَة).
+                    </blockquote>
+                    <ol class="custom-list">
+                        <li><strong>Definiteness:</strong> Definite or Indefinite.</li>
+                        <li><strong>Case Ending:</strong> Nominative, Accusative, or Genitive.</li>
+                        <li><strong>Gender:</strong> Masculine or Feminine.</li>
+                        <li><strong>Number:</strong> Singular, Dual, or Plural.</li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h2>1. The Indefinite Noun (النَّكِرَةُ)</h2>
+                    <blockquote class="definition-box">
+                        An indefinite noun refers to a non-specific person, animal, or object. Think of it as using "a"
+                        or "an" in English.
+                    </blockquote>
+                    <p><strong>Key Signs:</strong></p>
+                    <ul class="analysis-list">
+                        <li>It does not start with "Al" (ال).</li>
+                        <li>It usually ends with Tanween (e.g., <span dir="rtl" lang="ar">كِتَابٌ</span>, <span
+                                dir="rtl" lang="ar">بَيْتًا</span>, <span dir="rtl" lang="ar">نَارٍ</span>).</li>
+                    </ul>
+                    <p><strong>Examples:</strong></p>
+                    <table class="vocab-table">
+                        <thead>
+                            <tr>
+                                <th>Arabic</th>
+                                <th>English</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">كِتَابٌ</span></td>
+                                <td><span class="answer">Book</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">بَابٌ</span></td>
+                                <td><span class="answer">Door</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">جُوعٌ</span></td>
+                                <td><span class="answer">Hunger</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">طَيْرًا</span></td>
+                                <td><span class="answer">Birds</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">حِجَارَةٍ</span></td>
+                                <td><span class="answer">Stones</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">نَارٌ</span></td>
+                                <td><span class="answer">Fire</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">أَفْئِدَةٌ</span></td>
+                                <td><span class="answer">Hearts</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">إِنْسَانٌ</span></td>
+                                <td><span class="answer">Man</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">ذَرَّةٍ</span></td>
+                                <td><span class="answer">Atom</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">رَسُولٌ</span></td>
+                                <td><span class="answer">Apostle</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">جَنَّاتٌ</span></td>
+                                <td><span class="answer">Gardens</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <h2>2. The Definite Noun (الْمَعْرِفَة)</h2>
+                    <blockquote class="definition-box">
+                        A definite noun refers to a specific person, animal, or object. Think of it as using "the" in
+                        English, or referring to something specific by name.
+                    </blockquote>
+
+                    <h3>Type 1: Using the Definite Article (ال)</h3>
+                    <p>The most common way to make a noun definite is by adding "Al" (ال) to the beginning. When you add
+                        "Al", you must remove the Tanween from the end.</p>
+                    <table class="vocab-table">
+                        <thead>
+                            <tr>
+                                <th>Indefinite</th>
+                                <th>Definite</th>
+                                <th>Meaning</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">صِرَاطٌ</span></td>
+                                <td><span dir="rtl" lang="ar">الصِّرَاطُ</span></td>
+                                <td><span class="answer">A path → The path</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَتْحٌ</span></td>
+                                <td><span dir="rtl" lang="ar">الْفَتْحُ</span></td>
+                                <td><span class="answer">A victory → The victory</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">يَتِيمٌ</span></td>
+                                <td><span dir="rtl" lang="ar">الْيَتِيمُ</span></td>
+                                <td><span class="answer">An orphan → The orphan</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">بَيْتٌ</span></td>
+                                <td><span dir="rtl" lang="ar">الْبَيْتُ</span></td>
+                                <td><span class="answer">A house → The house</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">خَوْفٌ</span></td>
+                                <td><span dir="rtl" lang="ar">الْخَوْفُ</span></td>
+                                <td><span class="answer">A fear → The fear</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 style="margin-top: 2rem;">Type 2: Proper Names (أَسْمَاءُ العَلَم)</h3>
+                    <p>The names of specific people or places are automatically definite without needing "Al".</p>
+                    <table class="vocab-table">
+                        <thead>
+                            <tr>
+                                <th>Arabic</th>
+                                <th>English</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">أَحْمَدُ</span></td>
+                                <td><span class="answer">Ahmed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">فَاطِمَةُ</span></td>
+                                <td><span class="answer">Fatema</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">مِصْرُ</span></td>
+                                <td><span class="answer">Egypt</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">بَيْرُوتُ</span></td>
+                                <td><span class="answer">Beirut</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 style="margin-top: 2rem;">Type 3: Possessive Phrases (الْإِضَافَة)</h3>
+                    <p>A noun becomes definite when it is in a possessive phrase (Idafa), such as "the book of Allah" or
+                        "your book".</p>
+                    <table class="vocab-table">
+                        <thead>
+                            <tr>
+                                <th>Arabic</th>
+                                <th>English</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">عَبْدُ اللَّهِ</span></td>
+                                <td><span class="answer">Slave of Allah</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">كِتَابُ اللَّهِ</span></td>
+                                <td><span class="answer">Book of Allah</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">سَبِيلِي</span></td>
+                                <td><span class="answer">My way</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">يَمِينِي</span></td>
+                                <td><span class="answer">My right</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">رَبُّكَ</span></td>
+                                <td><span class="answer">Your Lord</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">نَارُ اللَّهِ</span></td>
+                                <td><span class="answer">Fire of Allah</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">أَصْحَابُ الْقُبُورِ</span></td>
+                                <td><span class="answer">People of the grave</span></td>
+                            </tr>
+                            <tr>
+                                <td><span dir="rtl" lang="ar">كِتَابُكُمْ</span></td>
+                                <td><span class="answer">Your book</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <h2>Quranic Examples: Definite & Indefinite Nouns</h2>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            قُلْ يَا أَيُّهَا <span class="c1">الْكَافِرُونَ</span>
+                        </p>
+                        <p class="translation">
+                            Say, "O <span class="c1">disbelievers</span>". (109:1)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْكَافِرُونَ</span> is a <strong>Definite Noun</strong> because it
+                                starts with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            إِنَّا أَعْطَيْنَاكَ <span class="c1">الْكَوْثَرَ</span>
+                        </p>
+                        <p class="translation">
+                            Indeed, We have granted you, <span class="c1">[O Muhammad], al-Kawthar</span>. (108:1)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْكَوْثَرَ</span> is a <strong>Definite Noun</strong> because it
+                                starts with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            إِيلَافِهِمْ <span class="c1">رِحْلَةَ الشِّتَاءِ</span> وَ<span class="c1">الصَّيْفِ</span>
+                        </p>
+                        <p class="translation">
+                            Their accustomed security [in] the <span class="c1">caravan of winter</span> and <span
+                                class="c1">summer</span>. (106:2)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">رِحْلَةَ الشِّتَاءِ</span> is a <strong>Definite Noun</strong> because
+                                it is a possessive phrase (Idafa).</li>
+                            <li><span class="c1">الصَّيْفِ</span> is a <strong>Definite Noun</strong> because it starts
+                                with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            وَأَرْسَلَ عَلَيْهِمْ <span class="c2">طَيْرًا</span> <span class="c3">أَبَابِيلَ</span>
+                        </p>
+                        <p class="translation">
+                            And He sent against them <span class="c2">birds</span> in <span class="c3">flocks</span>.
+                            (105:3)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c2">طَيْرًا</span> and <span class="c3">أَبَابِيلَ</span> are
+                                <strong>Indefinite Nouns</strong> because they end with Tanween.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            وَيَمْنَعُونَ <span class="c1">الْمَاعُونَ</span>
+                        </p>
+                        <p class="translation">
+                            And withhold <span class="c1">[simple] assistance</span>. (107:7)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْمَاعُونَ</span> is a <strong>Definite Noun</strong> because it
+                                starts with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            تَرْمِيهِم <span class="c2">بِحِجَارَةٍ</span> مِّن <span class="c3">سِجِّيلٍ</span>
+                        </p>
+                        <p class="translation">
+                            Striking them with <span class="c2">stones</span> of <span class="c3">hard clay</span>.
+                            (105:4)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c2">بِحِجَارَةٍ</span> and <span class="c3">سِجِّيلٍ</span> are
+                                <strong>Indefinite Nouns</strong> because they end with Tanween.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            وَمَا أَدْرَاكَ مَا <span class="c1">الْحُطَمَةُ</span>
+                        </p>
+                        <p class="translation">
+                            And what can make you know what is the <span class="c1">Crusher</span>? (104:5)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْحُطَمَةُ</span> is a <strong>Definite Noun</strong> because it
+                                starts with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            فَهُوَ فِي <span class="c2">عِيشَةٍ</span> <span class="c3">رَّاضِيَةٍ</span>
+                        </p>
+                        <p class="translation">
+                            He will be in a <span class="c3">pleasant</span> <span class="c2">life</span>. (101:7)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c2">عِيشَةٍ</span> and <span class="c3">رَّاضِيَةٍ</span> are
+                                <strong>Indefinite Nouns</strong> because they end with Tanween.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            فَذَٰلِكَ الَّذِي يَدُعُّ <span class="c1">الْيَتِيمَ</span>
+                        </p>
+                        <p class="translation">
+                            For that is the one who drives away the <span class="c1">orphan</span>. (107:2)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْيَتِيمَ</span> is a <strong>Definite Noun</strong> because it starts
+                                with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            الَّذِي جَمَعَ <span class="c2">مَالًا</span> وَعَدَّدَهُ
+                        </p>
+                        <p class="translation">
+                            Who collects <span class="c2">wealth</span> and [continuously] counts it. (104:2)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c2">مَالًا</span> is an <strong>Indefinite Noun</strong> because it ends
+                                with Tanween.</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            وَلَا يَحُضُّ عَلَىٰ <span class="c1">طَعَامِ الْمِسْكِينِ</span>
+                        </p>
+                        <p class="translation">
+                            And does not encourage the <span class="c1">feeding of the poor</span>. (107:3)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">طَعَامِ الْمِسْكِينِ</span> is a <strong>Definite Noun</strong> because
+                                it is a possessive phrase (Idafa).</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            <span class="c2">رَسُولٌ</span> مِّنَ <span class="c1">اللَّهِ</span> يَتْلُو <span
+                                class="c2">صُحُفًا</span> <span class="c2">مُّطَهَّرَةً</span>
+                        </p>
+                        <p class="translation">
+                            A <span class="c2">Messenger</span> from <span class="c1">Allah</span>, reciting purified
+                            <span class="c2">scriptures</span>. (98:2)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c2">رَسُولٌ</span>, <span class="c2">صُحُفًا</span>, and <span
+                                    class="c2">مُّطَهَّرَةً</span> are <strong>Indefinite Nouns</strong> (ending with
+                                Tanween).</li>
+                            <li><span class="c1">اللَّهِ</span> is a <strong>Definite Noun</strong> (Proper Name).</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            الَّتِي تَطَّلِعُ عَلَى <span class="c1">الْأَفْئِدَةِ</span>
+                        </p>
+                        <p class="translation">
+                            Which mounts directed at the <span class="c1">hearts</span>. (104:7)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْأَفْئِدَةِ</span> is a <strong>Definite Noun</strong> because it
+                                starts with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            فَمَن يَعْمَلْ مِثْقَالَ <span class="c2">ذَرَّةٍ</span> <span class="c3">خَيْرًا</span>
+                            يَرَهُ
+                        </p>
+                        <p class="translation">
+                            So whoever does an <span class="c2">atom's</span> weight of <span class="c3">good</span>
+                            will see it. (99:7)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c2">ذَرَّةٍ</span> and <span class="c3">خَيْرًا</span> are
+                                <strong>Indefinite Nouns</strong> because they end with Tanween.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            حَتَّىٰ زُرْتُمُ <span class="c1">الْمَقَابِرَ</span>
+                        </p>
+                        <p class="translation">
+                            Until you visit the <span class="c1">graveyards</span>. (102:2)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">الْمَقَابِرَ</span> is a <strong>Definite Noun</strong> because it
+                                starts with "Al".</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <p class="example-sentence" dir="rtl" lang="ar">
+                            كَلَّا لَوْ تَعْلَمُونَ <span class="c1">عِلْمَ الْيَقِينِ</span>
+                        </p>
+                        <p class="translation">
+                            No! If you only knew with <span class="c1">knowledge of certainty</span>... (99:5)
+                        </p>
+                        <ul class="analysis-list">
+                            <li><span class="c1">عِلْمَ الْيَقِينِ</span> is a <strong>Definite Noun</strong> because it
+                                is a possessive phrase (Idafa).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Vocabulary</h2>
+                    <div class="vocab-grid-container">
+                        <table class="vocab-table">
+                            <thead>
+                                <tr>
+                                    <th>Arabic</th>
+                                    <th>English</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">أَعْطَيْنَاكَ</span></td>
+                                    <td><span class="answer">Granted</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">إِيلَافِهِمْ</span></td>
+                                    <td><span class="answer">their accustomed security</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">رِحْلَة</span></td>
+                                    <td><span class="answer">Caravan</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الشِّتَاء</span></td>
+                                    <td><span class="answer">Winter</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الصَّيْف</span></td>
+                                    <td><span class="answer">Summer</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">طَيْرًا</span></td>
+                                    <td><span class="answer">Birds</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">أَبَابِيل</span></td>
+                                    <td><span class="answer">in flocks</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">يَمْنَعُونَ</span></td>
+                                    <td><span class="answer">Withhold</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الْمَاعُونَ</span></td>
+                                    <td><span class="answer">Assistance</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">عِيشَة</span></td>
+                                    <td><span class="answer">Life</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">رَاضِيَة</span></td>
+                                    <td><span class="answer">Pleasant</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="vocab-table">
+                            <thead>
+                                <tr>
+                                    <th>Arabic</th>
+                                    <th>English</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الْيَتِيم</span></td>
+                                    <td><span class="answer">the orphan</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">يَحُضُّ</span></td>
+                                    <td><span class="answer">Encourage</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">طَعَامِ الْمِسْكِينِ</span></td>
+                                    <td><span class="answer">the feeding of the poor</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">صُحُفًا</span></td>
+                                    <td><span class="answer">Scriptures</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">مُطَهَّرَةً</span></td>
+                                    <td><span class="answer">Purified</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الْأَفْئِدَة</span></td>
+                                    <td><span class="answer">the hearts</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">مِثْقَالَ</span></td>
+                                    <td><span class="answer">Weight</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">ذَرَّةٍ</span></td>
+                                    <td><span class="answer">Atom</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الْمَقَابِر</span></td>
+                                    <td><span class="answer">the graveyards</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">تَعْلَمُونَ</span></td>
+                                    <td><span class="answer">Know</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">عِلْمَ الْيَقِينِ</span></td>
+                                    <td><span class="answer">knowledge of certainty</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Exercises (تَدْرِيبَات)</h2>
+
+                    <div class="exercise">
+                        <h3>Exercise 1: Study Surah Al-Balad</h3>
+                        <p class="exercise-prompt">Read Surah Al-Balad and try to find all the Definite and Indefinite
+                            Nouns within it.</p>
+                    </div>
+
+                    <div class="exercise">
+                        <h3>Exercise 2: Definite or Indefinite?</h3>
+                        <p class="exercise-prompt">In the following Ayahs, define whether the <strong>bold</strong>
+                            words are definite or indefinite.</p>
+                        <blockquote class="arabic-text" dir="rtl" lang="ar">
+                            <p>مِنَ <strong>الْجِنَّةِ</strong> وَ<strong>النَّاسِ</strong></p>
+                            <p>سَيَصْلَىٰ <strong>نَارًا</strong> ذَاتَ <strong>لَهَبٍ</strong></p>
+                            <p>فِي جِيدِهَا <strong>حَبْلٌ</strong> مِّن <strong>مَّسَدٍ</strong></p>
+                            <p>إِذَا جَاءَ <strong>نَصْرُ اللَّهِ</strong> وَ<strong>الْفَتْحُ</strong></p>
+                            <p>وَرَأَيْتَ <strong>النَّاسَ</strong> يَدْخُلُونَ فِي <strong>دِينِ اللَّهِ</strong>
+                                <strong>أَفْوَاجًا</strong></p>
+                            <p>الَّذِي أَطْعَمَهُم مِّن <strong>جُوعٍ</strong> وَآمَنَهُم مِّن <strong>خَوْفٍ</strong>
+                            </p>
+                            <p>أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ <strong>بِأَصْحَابِ الْفِيلِ</strong></p>
+                        </blockquote>
+                        <button class="solution-btn">Show Solution</button>
+                        <div class="solution-content hidden">
+                            <ul class="analysis-list">
+                                <li><strong>الْجِنَّةِ / النَّاسِ / الْفَتْحُ / الْفِيلِ:</strong> Definite (starts with
+                                    "Al").</li>
+                                <li><strong>نَارًا / لَهَبٍ / حَبْلٌ / مَّسَدٍ / أَفْوَاجًا / جُوعٍ / خَوْفٍ:</strong>
+                                    Indefinite (ends with Tanween).</li>
+                                <li><strong>نَصْرُ اللَّهِ / دِينِ اللَّهِ / بِأَصْحَابِ الْفِيلِ:</strong> Definite
+                                    (possessive phrase - Idafa).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exercise">
+                        <h3>Exercise 3: Match the Ayahs</h3>
+                        <p class="exercise-prompt">Link the Arabic Ayah from Group One to its English translation from
+                            Group Two.</p>
+                        <div class="matching-exercise">
+                            <div class="group">
+                                <strong>Group One (Arabic)</strong>
+                                <ol>
+                                    <li><span dir="rtl" lang="ar">رَسُولٌ مِّنَ اللَّهِ يَتْلُو صُحُفًا
+                                            مُّطَهَّرَةً</span></li>
+                                    <li><span dir="rtl" lang="ar">إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ</span></li>
+                                    <li><span dir="rtl" lang="ar">فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ</span>
+                                    </li>
+                                    <li><span dir="rtl" lang="ar">فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ</span></li>
+                                </ol>
+                            </div>
+                            <div class="group">
+                                <strong>Group Two (English)</strong>
+                                <ol type="A">
+                                    <li>So whoever does an atom's weight of good will see it.</li>
+                                    <li>For that is the one who drives away the orphan.</li>
+                                    <li>A Messenger from Allah, reciting purified scriptures.</li>
+                                    <li>Indeed, We have granted you, al-Kawthar.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <button class="solution-btn">Show Solution</button>
+                        <div class="solution-content hidden">
+                            <ul class="analysis-list">
+                                <li>1 → C</li>
+                                <li>2 → D</li>
+                                <li>3 → A</li>
+                                <li>4 → B</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exercise">
+                        <h3>Exercise 4: Convert to Indefinite</h3>
+                        <p class="exercise-prompt">Turn these definite words into indefinite words.</p>
+                        <table class="vocab-table">
+                            <thead>
+                                <tr>
+                                    <th>Definite Word</th>
+                                    <th>Your Answer (Indefinite)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">النَّهَارُ</span></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">التِّيْنُ</span></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">النُّجُومُ</span></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">الرَّجُلُ</span></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">قَلَمِي</span> (my pen)</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">صَدِيقِي</span> (my friend)</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">أَبِي</span> (my father)</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">كِتَابُكَ</span> (your book)</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><span dir="rtl" lang="ar">مَوْطِنُكَ</span> (your homeland)</td>
+                                    <td>...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="solution-btn">Show Solution</button>
+                        <div class="solution-content hidden">
+                            <table class="vocab-table">
+                                <thead>
+                                    <tr>
+                                        <th>Definite Word</th>
+                                        <th>Indefinite Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">النَّهَارُ</span></td>
+                                        <td><span dir="rtl" lang="ar">نَهَارٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">التِّيْنُ</span></td>
+                                        <td><span dir="rtl" lang="ar">تِيْنٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">النُّجُومُ</span></td>
+                                        <td><span dir="rtl" lang="ar">نُجُومٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">الرَّجُلُ</span></td>
+                                        <td><span dir="rtl" lang="ar">رَجُلٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">قَلَمِي</span></td>
+                                        <td><span dir="rtl" lang="ar">قَلَمٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">صَدِيقِي</span></td>
+                                        <td><span dir="rtl" lang="ar">صَدِيقٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">أَبِي</span></td>
+                                        <td><span dir="rtl" lang="ar">أَبٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">كِتَابُكَ</span></td>
+                                        <td><span dir="rtl" lang="ar">كِتَابٌ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span dir="rtl" lang="ar">مَوْطِنُكَ</span></td>
+                                        <td><span dir="rtl" lang="ar">مَوْطِنٌ</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="exercise">
+                        <h3>Exercise 5: Complete the Sentences</h3>
+                        <p class="exercise-prompt">Choose the correct definite word from the brackets to complete the
+                            Ayah.</p>
+                        <div class="sentence-completion">
+                            <p dir="rtl" lang="ar">قُلْ أَعُوذُ بِرَبِّ <span class="c1">_______</span> (النَّاسِ -
+                                نَاسٍ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">فَسَبِّحْ بِحَمْدِ <span class="c1">_______</span> وَاسْتَغْفِرْهُ
+                                (رَبِّكَ - رَبٍّ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">لَكُمْ <span class="c1">_______</span> وَلِيَ دِينِ (دِينُكُمْ -
+                                دِينٌ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">إِنَّ <span class="c1">_______</span> لَفِي خُسْرٍ (الْإِنسَانَ -
+                                إِنسَانٍ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا <span class="c1">_______</span>
+                                (الصَّالِحَاتِ - صَالِحَاتٍ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">وَهَٰذَا <span class="c1">_______</span> الْأَمِينِ (الْبَلَدِ -
+                                بَلَدٍ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">مَا وَدَّعَكَ <span class="c1">_______</span> وَمَا قَلَىٰ (رَبُّكَ -
+                                رَبٍّ)</p>
+                            <hr>
+                            <p dir="rtl" lang="ar">فَيُعَذِّبُهُ اللَّهُ <span class="c1">_______</span> الْأَكْبَرَ
+                                (الْعَذَابَ - عَذَابٍ)</p>
+                        </div>
+                        <button class="solution-btn">Show Solution</button>
+                        <div class="solution-content hidden">
+                            <ul class="analysis-list">
+                                <li><strong>Sentence 1:</strong> <span dir="rtl" lang="ar">النَّاسِ</span> (Definite
+                                    with "Al")</li>
+                                <li><strong>Sentence 2:</strong> <span dir="rtl" lang="ar">رَبِّكَ</span> (Definite by
+                                    Idafa - possessive)</li>
+                                <li><strong>Sentence 3:</strong> <span dir="rtl" lang="ar">دِينُكُمْ</span> (Definite by
+                                    Idafa - possessive)</li>
+                                <li><strong>Sentence 4:</strong> <span dir="rtl" lang="ar">الْإِنسَانَ</span> (Definite
+                                    with "Al")</li>
+                                <li><strong>Sentence 5:</strong> <span dir="rtl" lang="ar">الصَّالِحَاتِ</span>
+                                    (Definite with "Al")</li>
+                                <li><strong>Sentence 6:</strong> <span dir="rtl" lang="ar">الْبَلَدِ</span> (Definite
+                                    with "Al")</li>
+                                <li><strong>Sentence 7:</strong> <span dir="rtl" lang="ar">رَبُّكَ</span> (Definite by
+                                    Idafa - possessive)</li>
+                                <li><strong>Sentence 8:</strong> <span dir="rtl" lang="ar">الْعَذَابَ</span> (Definite
+                                    with "Al")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

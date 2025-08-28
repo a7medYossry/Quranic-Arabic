@@ -401,3 +401,88 @@
 .hidden {
   display: none;
 }
+
+// Style for the matching exercise
+.matching-exercise {
+  display: grid;
+  gap: 2rem;
+  
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .group ol {
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+// Style for the sentence completion exercise
+.sentence-completion p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+//================================================
+// Styles for Dropdown Menu
+//================================================
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit; // Inherit font from navbar link
+  color: var(--color-text-secondary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: calc(100% + 15px); // Position below the button with a small gap
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: 1rem;
+  width: 250px;
+  list-style: none;
+  z-index: 100;
+  border: 1px solid var(--color-border);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  transform-origin: top center;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.dropdown__item {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+  }
+}

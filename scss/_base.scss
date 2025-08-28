@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%; // 1rem = 10px
+  font-size: 70%; // 1rem = 10px
   scroll-behavior: smooth;
 }
 
@@ -27,4 +27,11 @@ body.dark-mode {
   --color-text-primary: var(--dark-color-text-primary);
   --color-text-secondary: var(--dark-color-text-secondary);
   --color-border: var(--dark-color-border);
+}
+blockquote {
+  font-size: large;
+}
+
+li{
+  font-size: medium;
 }
